@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Grade Checker
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Student Grade Checker</h1>
+
+            <label for="nameInput">Student Name</label>
+            <input type="text" id="nameInput" placeholder="Enter student name" >
+
+            <label for="markInput">Marks (0 - 100)</label>
+            <input type="number" id="markInput" placeholder="Enter mark" min="0" max="100">
+
+            <button onclick="checkGrade()">Check Result</button>
+
+            <div id="resultArea"></div>
+
+            <ul id="studentList"></ul>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    
+</html>
