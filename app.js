@@ -1,20 +1,18 @@
-let students = []
+let students = [];
 
-function checkGrade(){
+function checkGrade() {
 
-    let name = document.getElementById("nameInput").value;
-
+    let name = document.getElementById("nameInput").value.trim();
     let mark = Number(document.getElementById("markInput").value);
-
     let resultArea = document.getElementById("resultArea");
 
-    if (name === ""){
-        resultArea.textContent = "Please eneter a student name";
+    if (name === "") {
+        resultArea.textContent = "Please enter a student name";
         resultArea.className = "fail";
         return;
     }
 
-    if (mark < 0 || mark > 100 || isNaN(mark)){
+    if (isNaN(mark) || mark < 0 || mark > 100) {
         resultArea.textContent = "Please enter a valid mark between 0 and 100";
         resultArea.className = "fail";
         return;
@@ -22,28 +20,22 @@ function checkGrade(){
 
     let grade = "";
 
-    if (mark >= 75){
-        grade ="Distinction";
-    }
-    else if (mark >= 60) {
+    if (mark >= 75) {
+        grade = "Distinction";
+    } else if (mark >= 60) {
         grade = "Merit";
-    }
-     else if (mark >= 50) {
+    } else if (mark >= 50) {
         grade = "Pass";
-    }
-    else
-    {
+    } else {
         grade = "Fail";
     }
 
-    resultArea.textContent = name + " scored " + mark + "/100 - " + grade;
+    resultArea.textContent = `${name} scored ${mark}/100 - ${grade}`;
 
-    if (grade === "Fail"){
+    if (grade === "Fail") {
         resultArea.className = "fail";
-    }
-    else
-    {
-        resultArea.classname = "Pass";
+    } else {
+        resultArea.className = "pass";
     }
 
     students.push({
@@ -58,29 +50,28 @@ function checkGrade(){
     document.getElementById("markInput").value = "";
 }
 
-// const button = document.getElementById("checkButton");
+const button = document.getElementById("checkButton");
+button.addEventListener("click", checkGrade);
 
-// button.addEventListener("click", checkGrade);
-
-const button = document.getElementById("checkButton")
-
-button.addEventListener("click", checkGrade)
-
-function updateList(){
+function updateList() {
 
     let list = document.getElementById("studentList");
 
     list.innerHTML = "";
 
-    for (let i = 0; i < students.length; i++){
+    for (let i = 0; i < students.length; i++) {
 
         let li = document.createElement("li");
 
-        li.textContent = students[i].name + " - " + students[i].mark + "/100 - " + students[i].grade;
+        li.textContent =
+            `${students[i].name} - ${students[i].mark}/100 - ${students[i].grade}`;
 
-        if (students[i].grade === "Fail"){
+        if (students[i].grade === "Fail") 
+        {
             li.className = "fail-item";
-        }else{
+
+        } else {
+            
             li.className = "pass-item";
         }
 

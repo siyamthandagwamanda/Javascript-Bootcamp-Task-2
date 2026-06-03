@@ -20,7 +20,7 @@ h1 {
 }
 
 label {
-    display:block;
+    display: block;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -32,7 +32,7 @@ input {
     margin-bottom: 10px;
 }
 
-button{
+button {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
@@ -42,7 +42,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #45a049;
 }
 
@@ -51,13 +51,30 @@ button:hover{
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-#studentList{
+.fail {
+    color: red;
+}
+
+.pass {
+    color: green;
+}
+
+#studentList {
     margin-top: 15px;
     padding-left: 20px;
 }
 
 #studentList li {
     margin-bottom: 5px;
+}
+
+.fail-item {
+    color: red;
+}
+
+.pass-item {
+    color: green;
 }
