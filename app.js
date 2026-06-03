@@ -28,7 +28,7 @@ function checkGrade(){
     else if (mark >= 60) {
         grade = "Merit";
     }
-    else if (mark >= 50) {
+     else if (mark >= 50) {
         grade = "Pass";
     }
     else
@@ -43,7 +43,7 @@ function checkGrade(){
     }
     else
     {
-        resultArea.classListname = "Pass";
+        resultArea.classname = "Pass";
     }
 
     students.push({
@@ -58,7 +58,15 @@ function checkGrade(){
     document.getElementById("markInput").value = "";
 }
 
-function upodate(){
+// const button = document.getElementById("checkButton");
+
+// button.addEventListener("click", checkGrade);
+
+const button = document.getElementById("checkButton")
+
+button.addEventListener("click", checkGrade)
+
+function updateList(){
 
     let list = document.getElementById("studentList");
 
