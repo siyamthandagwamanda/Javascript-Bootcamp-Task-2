@@ -2,7 +2,7 @@ let students = []
 
 function checkGrade(){
 
-    let name = document.getElementByOd("nameInput").value;
+    let name = document.getElementById("nameInput").value;
 
     let mark = Number(document.getElementById("markInput").value);
 

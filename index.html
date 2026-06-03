@@ -18,11 +18,13 @@
             <input type="text" id="nameInput" placeholder="Enter student name" >
 
             <label for="markInput">Marks (0 - 100)</label>
-            <input type="number" id="markInput" placeholder="Enter mark" min="0" max="100">
+            <input type="number" id="markInput">
 
-            <button onclick="checkGrade()">Check Result</button>
+            <!-- <button onclick="checkGrade()">Check Result</button> -->
 
-            <div id="resultArea"></div>
+            <div id="resultArea">
+                 <button id="resultArea" onclick="checkGrade()">Check Result</button>
+            </div>
 
             <ul id="studentList"></ul>
         </div>
