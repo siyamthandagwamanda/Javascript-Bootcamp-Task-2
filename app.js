@@ -25,6 +25,9 @@ function checkGrade(){
     if (mark >= 75){
         grade ="Distinction";
     }
+    else if (mark >= 60) {
+        grade = "Merit";
+    }
     else if (mark >= 50) {
         grade = "Pass";
     }
