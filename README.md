@@ -7,4 +7,21 @@ It allows users to enter a student's name and mark, then instantly determines wh
 
 The project focuses on core DOM manipulation, form validation, and JavaScript control logic.
 
-
+User enters:
+    Name + Mark
+          ↓
+Click Button
+          ↓
+checkGrade()
+          ↓
+Validate Inputs
+          ↓
+Calculate Grade
+          ↓
+Display Result
+          ↓
+Store Student in Array
+          ↓
+updateList()
+          ↓
+Refresh Student List
