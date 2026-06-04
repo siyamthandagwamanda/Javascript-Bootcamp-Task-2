@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #aaaaaa;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 30;
+    padding: 40px;
 }
 
 .container {
@@ -16,41 +16,44 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #07006c;
 }
 
 label {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #0000a7;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #45a049;
+    margin-top: 5px;
+    background-color: #35355a;
 }
 
 #resultArea {
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+    background-color: #d2f2e0;
+    border-top-left-radius: 5px;
     font-weight: bold;
 }
 
@@ -59,7 +62,7 @@ button:hover {
 }
 
 .pass {
-    color: green;
+    color: rgba(0, 0, 0, 0.686);
 }
 
 #studentList {
@@ -76,5 +79,5 @@ button:hover {
 }
 
 .pass-item {
-    color: green;
+    color: rgb(0, 0, 0);
 }

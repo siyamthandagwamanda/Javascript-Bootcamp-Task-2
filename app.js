@@ -71,7 +71,7 @@ function updateList() {
             li.className = "fail-item";
 
         } else {
-            
+
             li.className = "pass-item";
         }
 
